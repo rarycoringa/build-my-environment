@@ -12,14 +12,16 @@ sudo apt update
 # install atom
 sudo apt install atom
 
-# install packages
+# install productive packages
 apm install \
-minimap \
-file-icons \
-terminus \
+minimap \ # https://atom.io/packages/minimap
+file-icons \ # https://atom.io/packages/file-icons
+terminus \ # https://atom.io/packages/terminus  
 
+# install python ide packages
 apm install \
-atom-ide-base \
-ide-python
+atom-ide-base \ # https://atom.io/packages/atom-ide-base
+ide-python # https://atom.io/packages/ide-python
 
+# install ide required python package
 python3 -m pip install 'python-lsp-server[all]'
